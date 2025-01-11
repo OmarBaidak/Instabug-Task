@@ -8,6 +8,7 @@
     * Cucumber framework with BDD approach
     * Page Object Model (POM) design pattern
     * Automated testing of React Native login screen
+    * All Test cases answers are provided in the "React Native mobile application test cases.csv" file within this repository
 
 **Category 2: Web Automation** 
 
