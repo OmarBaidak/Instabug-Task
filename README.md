@@ -16,7 +16,7 @@
     * Selenium WebDriver for web automation
     * Tests search functionality on Jumia.com
     * Includes pseudocode for key test scenarios within the test classes
- **Note:** Kindly change the jdk version in POM to the version you're using
+    * **Note:** Kindly change the jdk version in POM to the version you're using
 
 
 **Category 3: API Automation**
@@ -26,7 +26,7 @@
     * Rest Assured framework for API testing
     * Tests a POST request to create a new user in a REST API
     * Includes pseudocode for key test scenarios within the test classes
-**Note:** Kindly change the jdk version in POM to the version you're using
+    * **Note:** Kindly change the jdk version in POM to the version you're using
 
 
   **Conceptual Challenges:**
