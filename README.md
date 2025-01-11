@@ -1,8 +1,5 @@
 # Instabug-Task
 
-  **Conceptual Challenges:**
-
-* All conceptual challenge answers are provided in the "Conceptual Challenge Answer" file within this repository
 
 **Category 1: Mobile Automation**
 
@@ -30,6 +27,11 @@
     * Tests a POST request to create a new user in a REST API
     * Includes pseudocode for key test scenarios within the test classes
 **Note:** Kindly change the jdk version in POM to the version you're using
+
+
+  **Conceptual Challenges:**
+
+* All conceptual challenge answers are provided in the "Conceptual Challenge Answer" file within this repository
 
  
 
