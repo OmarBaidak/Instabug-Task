@@ -7,7 +7,7 @@
 * **Key Points:**
     * Cucumber framework with BDD approach
     * Page Object Model (POM) design pattern
-    * Automated testing of React Native login screen
+    * Automated testing of React Native login screen using Java 
     * All Test cases answers are provided in the "React Native mobile application test cases.csv" file within this repository
 
 **Category 2: Web Automation** 
@@ -16,7 +16,7 @@
 * **Key Points:**
     * Selenium WebDriver for web automation
     * Tests search functionality on Jumia.com
-    * Includes pseudocode for key test scenarios within the test classes
+    * Automated testing of Web Automation using Java 
     * **Note:** Kindly change the jdk version in POM to the version you're using
 
 
@@ -24,10 +24,10 @@
 
 * **Subject:** Api-Task
 * **Key Points:**
-    * Rest Assured framework for API testing
-    * Tests a POST request to create a new user in a REST API
-    * Includes pseudocode for key test scenarios within the test classes
+    * Rest Assured framework for API testing using Java
+    * Tests a POST request to create a new user in a REST API using Java
     * **Note:** Kindly change the jdk version in POM to the version you're using
+
 
 
   **Conceptual Challenges:**
