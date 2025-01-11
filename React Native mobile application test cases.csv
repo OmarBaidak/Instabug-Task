@@ -1,0 +1,83 @@
+﻿Test Scenario,ID,Title,Description,Environment,Pre-conditions,Test data,Steps,Expected results,Actual results,Status,Type,Comment,Priority
+Login Page,TC_Login_01,"The user is able to successfully log in.
+
+",Verify successful login with valid credentials.,,The app is installed and launched successfully. The user has valid credentials for login.,"Username:Valid Username
+Password:Valid Password","1. User open the App
+2.User enters his/her valid username & password
+3. press login","1.The App opens successfully.
+2.Successful login, navigate to the next screen",,,Functional,,High
+,TC_Login_02,Error message returned when Customer enter wrong username,Verify that an 'Invalid credentials' error message is displayed when the user enters an incorrect username.,,The app is installed and launched successfully. The user has an account in the system.,"UsernameInvalid Username (not registered in the system)
+Password:Valid Password","1. User open the App
+2.  enter username not exit in the system & password
+3.press login","1.The App opens successfully.
+2.error message returned to the user ""Your login credentials are incorrect. Please try again "" [No counter nor locking]",,,Functional,,High
+,TC_Login_03,The user will be locked after 5 wrong password attempts ,Check that the user is locked after 5 times wrong password attempts ,,The app is installed and launched successfully. The user has an account and is aware of the password policy.,"Username:Valid Username
+Password: Wrong Password (used 5 consecutive times)","1. User open the App
+2. User enter username & wrong password (5 consequential times)","1.The App opens successfully.
+2.A new popup message shown to the customer when enter wrong password for the fourth time :
+'your account has been locked due to x Failed attempts""",,,Functional,,High
+,TC_Login_04,Successful Login using username & password on the 5th attempt,User can login successfully  using his/her username & password after 4 wrong attempts,,The app is installed and launched successfully. The user has an account and is aware of the login attempt limits.,"Username:Valid Username
+Password:
+Wrong Password (used 4 times consecutively)
+Valid Password (used on the 5th attempt)","1. User open the App
+2. User enter username & wrong password (4 consequential times)
+3.User enters his/her valid username & password on the 5th attempt","1.The App opens successfully.
+2.on the first 4 attempts a warning msg will be shown includes 'your account will be locked after X wrong attempts'
+3.After a successful login , User will be logged in and directed {home page} screen
+system will reset the wrong credentials attempts",,,Functional,,Medium
+,TC_Login_05,Check that wrong attempts counter decrement with every wrong attempt at the first 3 wrong attempts,"The below warning message shown to the customer when enter wrong password for the first time :
+'your login credentials are incorrect. Your account will be locked after another 4 attempt '",,The app is installed and launched successfully. The user has an account and is informed about the warning messages for failed login attempts.,"Username: Valid Username
+Password: Wrong Password (used on the first, second, and third attempts)","1. User open the App
+2.User enter username & wrong password (First Time)
+3.User enter username & wrong password (Second Time)
+4.User enter username & wrong password (Third Time)","1.The App opens successfully.
+2.The below warning message shown to the customer when enter wrong password for the first time :
+'your login credentials are incorrect. Your account will be locked after another 4 attempt '
+3.The below warning message shown to the customer when enter wrong password for the first time :
+'your login credentials are incorrect. Your account will be locked after another 3 attempt '
+4.The below warning message shown to the customer when enter wrong password for the first time :
+'your login credentials are incorrect. Your account will be locked after another 2 attempt '
+",,,Functional,,Medium
+,TC_Login_06,Verify password reset functionality,Verify that a user can reset their password using the 'Forgot Password' link.,,The app is installed and launched successfully. The user has a registered email for password reset.,"Username: Valid Username
+Email: Registered Email for password reset","1. User open the App
+2.User enter username 
+3.User press 'Forgot Password' link.","1.The App opens successfully.
+2.The user is redirected to the password reset screen and receives a password reset email.",,,Functional,,High
+,TC_Login_07,"The locked user can unlock his account by press ""unlock account""","check that the locked user can unlock his account by press ""unlock account"" ",,The app is installed and launched successfully. The user’s account is locked due to multiple failed login attempts.,"Username: Valid Username
+Password: Wrong Password (used 5 consecutive times)","1. User open the App
+2. User enter username & wrong password (5 consequential times)
+3.press ""unlock account""","1.The App opens successfully.
+2.A new popup message shown to the customer when enter wrong password for the fourth time :
+'your account has been locked due to x Failed attempts""
+3.a new popup message "" unlock your account"" with the below options :
+E-mail",,,Functional,,High
+,TC_Login_08,Login button will be dimmed until entering username & password,check that Login button will be dimmed until entering username & password meets the validations,,The app is installed and launched successfully. The login screen is displayed with empty username and password fields.,"Username:Valid Username
+Password:Valid Password","1. User open the App
+2. User enters his/her valid username
+3.user enters the password ","1.The App opens successfully.
+2.login button will be dimmed
+3.Login button will still dimmed until enter password meets the validations",,,Functional/UI,,Low
+,TC_Login_09,check the function of the eye icon in the password field,The user can view the entered password by pressing on the eye icon in the password field,,The app is installed and launched successfully. The login screen is displayed with the eye icon available in the password field.,"Username:Valid Username
+Password:Valid Password","1. User open the App
+2. User enters his/her valid username & password
+3.press on eye icon ( turn on )
+4.press on eye icon ( turn off )","1.The App opens successfully.
+2.By default, the password is hashed.
+3.The password will be clear.
+4.The password will be hashed.",,,Functional/UI,,Medium
+,TC_Login_10,User can't copy and or paste credentials in (user name) or (password) fields,Test checks that user can't copy and or paste credentials in (user name) or (password) fields,,The app is installed and launched successfully. The login screen is displayed with username and password fields enabled.,"Username:Valid Username
+Password:Valid Password","1. User open the App
+2.Type username
+3.Copy username
+4.Paste in ""username"" field","1.The App opens successfully.
+2.Type username
+3.User cannot copy username
+4.User cannot paste in username",,,Security,,Medium
+,TC_Login_11,Check Login UI matches requirement ,check that the mobile UI matches the UI required & provided ,,The app is installed and launched successfully. The UI requirements are documented and provided for comparison.,UI Design: Provided UI design document,"1. User open the App
+2.check the UI screen","1.The App opens successfully.
+2.check mobile UI matches the UI required & provided",,,UI,,Low
+,TC_Login_12,System ask the user to save his/her credentials,Test checks that system ask user to save his/her credentials,,The app is installed and launched successfully. The user has valid credentials and is attempting to log in for the first time on the device.,"Username:Valid Username
+Password:Valid Password","1. User open the App
+2. User enters his/her valid username & password
+4. press login","1.The App opens successfully.
+2.System  ask user to save his/her credentials",,,Functional,,Low
