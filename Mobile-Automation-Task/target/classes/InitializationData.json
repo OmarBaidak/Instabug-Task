@@ -1,0 +1,7 @@
+{
+  "udid": "emulator-5554",
+  "automationName": "UiAutomator2",
+  "avd": "Medium_Phone_API_35",
+  "appPackageName": "mobileApp.com",
+  "appActivity": "mobileApp.com.MainActivity"
+}
